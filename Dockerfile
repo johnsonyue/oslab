@@ -33,6 +33,7 @@ RUN wget https://downloads.sourceforge.net/project/bochs/bochs/2.6.9/bochs-2.6.9
     make && make install
 #code.
 ADD code.tar.gz ./
+COPY code.tar.gz ./
 RUN tar zxvf code.tar.gz
 
 WORKDIR $HOMEDIR
